@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Es 2</title>
+
+<script>
+function moltiplicazione (a , b) {
+   return a*b;
+
+
+}
+
+function divisione (a , b) {
+    return a/b;
+}
+
+function button1 (){
+    document.getElementById ("p").innerHTML = moltiplicazione(a , b);
+}
+
+function button2 (){
+    document.getElementById ("p2").innerHTML = divisione(a , b);
+}
+
+
+let a = prompt("Inserisci numero : ");
+let b = prompt("Inserisci numero : ");
+
+</script>
+
+
+
+
+</head>
+<body>
+  
+    <p id="p"> </p>
+    <p id="p2"> </p>
+
+    <button onclick="button1()">moltiplicazione</button>
+    <button onclick="button2()">divisione</button>
+
+
+
+</body>
+
+
+
+
+
+
+
+    </html>
