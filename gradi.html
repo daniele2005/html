@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Stringhe </title>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td> <h3 id="celsius">Gradi Celsius</h3> </td>
+            <td> <h3 id="fahrenheit">Gradi Fahrenheit</h3> </td>
+        </tr>
+        <tr>
+            <td> <input type="number" name="input" id="in1"> </td>
+            <td> <input type="number" name="input" id="in2"> </td>
+        </tr>
+        <tr>
+            <td> <button name="button" onclick="myFahrenheit()"> Fahrenheit </button> </button> </td>
+            <td> <button name="button" onclick="myCelsius()"> Celsius </button> </td>
+        </tr>
+    </table>
+
+    <p id="p"> </p>
+
+    <script>
+        function myCelsius() {
+            let Celsius=document.getElementById("in1").value;
+            let Fahrenheit=document.getElementById("in2").value;
+            let result =(Fahrenheit-32)/1.8;
+
+            document.getElementById("p").innerHTML="Gradi celsius: "+result+"°C";
+        }
+
+        function myFahrenheit() {
+            let Celsius=document.getElementById("in1").value;
+            let Fahrenheit=document.getElementById("in2").value;
+            let result = (Celsius*1.8)+32;
+
+            document.getElementById("p").innerHTML="Gradi Fahrenheit: "+result+"°F";
+        }
+    </script>
+</body>
+
+
+</html>
