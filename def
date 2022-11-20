@@ -1,0 +1,45 @@
+<html>
+<head> <title> Esercizio 4 </title> <link href="css	.css" rel="stylesheet" type="text/css"></head>
+<body>
+
+<table align="center">
+<tr><td><center>Tabella  </center></td></tr>
+<tr><td>  <img src="1.jpg" id="myImage" width="300" height="300"> 
+<button type="button" onclick  = "changeImage()" > Click me </button></td></tr>
+
+
+<tr><td> <img src="2.jpg" id="myImage2" width="300" height="300"> 
+<button type="button" onclick  = "changeImage2()" > Click me </button></td></tr>
+
+</table>
+
+<script>
+        function changeImage() {
+            var image = document.getElementById('myImage'); 
+            if (image.src.match("1.jpg")) {
+                image.src = "3.jpg";  
+            }
+            else {
+                image.src = "1.jpg"; 
+            }
+        }
+    </script>
+	
+	<script>
+        function changeImage2() {
+            var image = document.getElementById('myImage2'); 
+            if (image.src.match("2.jpg")) {
+                image.src = "4.jpg";  
+            }
+            else {
+                image.src = "2.jpg"; 
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
