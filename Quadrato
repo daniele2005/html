@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Prova</title>
+</head>
+
+<body>
+    <label for="lato">Lato Quadrato:</label>
+    <input type="text" id="lato" name="lato"><br><br>
+
+
+    <p id="p1"> </p>
+    <p id="p2"></p>
+
+    <button onclick="bottone1()">Area </button>
+    <button onclick="bottone2()"> Perimetro</button>
+
+
+    <script>
+
+        //let l = prompt("Inserisci il numero : ");
+
+
+
+        function aQuadrato(l) {
+
+            return l * l;
+        }
+
+
+        function bottone1() {
+            let l = document.getElementById("lato").value;
+            document.getElementById("p1").innerHTML = aQuadrato(l);
+        }
+
+        function Perimetro(l) {
+
+            return l * 4;
+        }
+
+
+
+        function bottone2() {
+            let l = document.getElementById("lato").value;
+            document.getElementById("p2").innerHTML = Perimetro(l);
+        }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
