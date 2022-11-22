@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+
+  <script>
+
+    let valoreIniziale= 0;
+    function addValue() {
+     
+     
+    
+      valoreIniziale += 1;
+      document.getElementById('testo').innerHTML = valoreIniziale;
+    }
+  </script>
+
+</head>
+  <body>
+
+    <p id="testo"></p>
+    
+    <input type="button" value="Clicca per incrementare" onclick="addValue();">
+
+    
+
+  </body>
+
+
+</html>
