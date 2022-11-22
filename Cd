@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Prova2</title>
+
+
+
+</head>
+
+<body>
+    <p id="p"></p>
+    <p id="p2"></p>
+
+    <button onclick="chiamaAlert()">
+        Clicca qui
+    </button>
+
+    <script>
+
+
+
+
+        class Cd {
+
+            constructor(autore, nome, durata, anno) {
+
+                this.autore = autore;
+                this.nome = nome;
+                this.durata = durata;
+                this.anno = anno;
+
+            }
+            /*
+                 toString() {
+                     return this.autore + " " + this.nome + " " + this.durata + " " + this.anno;
+         
+         
+         
+         
+                 }
+                 */
+
+        }
+
+
+
+        let cd1 = new Cd("Bruce Springsteen", "Born to Run ", 39, 1980);
+        let cd2 = new Cd("ACDC", "Back In Black", 41, 1979)
+
+        document.getElementById("p").innerHTML = cd1.autore + "" + cd1.durata;
+
+        cd1.autore = "Jim Morrison";
+        document.getElementById("p2").innerHTML = cd1.autore;
+
+
+        function chiamaAlert() {
+            alert(cd1);
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
