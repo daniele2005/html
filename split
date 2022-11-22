@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+
+<script>
+let nome = "pippo";
+let vettoreCaratteri = nome.split("");
+let nomeMaMi = "";
+
+console.log(nome);
+console.log(vettoreCaratteri);
+
+for(let j=0; j<vettoreCaratteri.length;j++){
+    if(j%2==0){
+        //console.log(vettoreCaratteri[j]);
+        nomeMaMi+= vettoreCaratteri[j].toLowerCase();
+    }
+    else{
+
+        nomeMaMi+= vettoreCaratteri[j].toLocaleUpperCase(); 
+        //console.log(vettoreCaratteri[j].toUpperCase());
+
+        
+    }
+
+   
+
+}
+//OUTPUT
+console.log(nomeMaMi);
+//pippo  
+//pIpPo
+
+</script>
