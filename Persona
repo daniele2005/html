@@ -1,0 +1,49 @@
+<html>
+<head>
+
+
+
+</head>
+<body>
+
+    <p id="p1">
+
+
+    </p>
+
+    <p id="p2">
+
+
+    </p>
+    
+    <script>
+
+        class Indirizzo{
+
+            constructor(Via,NumeroCivico,città,provincia){
+                this.Via = Via;
+                this.NumeroCivico = NumeroCivico;
+                this.città = città;
+                this.provincia = provincia;
+            }
+
+        }
+
+        let Indirizzo1 = new Indirizzo("Grappa",49,"Bosconero","Torino");
+
+        document.getElementById("p1").innerHTML = "L'indirizzo e': " + Indirizzo1.Via + " , " +  Indirizzo1.NumeroCivico + " , " + Indirizzo1.città + " , " + Indirizzo1.provincia
+
+        let Via = prompt("Inserisci la Via: ");
+        let NumeroCivico = prompt("Inserisci il numero civico della via: ");
+        let città = prompt("Inserisci la città :");
+        let provincia = prompt("Inserisci la provincia: ");
+
+        let Indirizzo2 = new Indirizzo(Via,NumeroCivico,città,provincia);
+
+        document.getElementById("p2").innerHTML = "L'indirizzo e': " + Indirizzo2.Via + " , " + Indirizzo2.NumeroCivico + " , " + Indirizzo2.città + " , " + Indirizzo2.provincia;
+        
+        
+    </script>
+
+</body>
+</html>
