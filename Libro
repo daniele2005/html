@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Libro oggetti </title>
+    <script>
+
+        class Libro {
+
+            constructor(titolo, autore, pagine, prezzo, disponibilità) {
+                this.autore = autore;
+                this.pagine = pagine;
+                this.titolo = titolo;
+                this.prezzo = prezzo;
+                this.disponibilità = disponibilità;
+
+            }
+            //document.getElementById("demo").innerHTML = libro1.titolo;
+
+            mostraLibro() {
+
+                alert(this.autore + " " + this.titolo + "" + this.pagine + "" + this.prezzo);
+            }
+
+        }
+
+        function crea() {
+
+            let libro1 = new Libro(" Il Buio", "Roberto Rossi", 250, 15, true);
+            let libro2 = new Libro("Il tavolo", "Calvino Rossi", 250, 15, true);
+            libro1.mostraLibro();
+            libro2.mostraLibro();
+            //console.log("sono qui");
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="crea()">
+        Clicca qui
+    </button>
+
+</body>
+
+
+
+
+</html>
